@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Akshay Jain" />
+  <title>Akshay Jain’s resume</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="resume-stylesheet.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Akshay Jain’s resume</h1>
+<p class="author">Akshay Jain</p>
+</header>
+<h5 id="email-me-linkedin-profile-github-profile"><a
+href="mailto:jain.akshay.r@gmail.com">email-me</a> | <a
+href="https://www.linkedin.com/in/akshayrjain/">LinkedIn profile</a> |
+<a href="https://github.com/exclusivearj">Github profile</a></h5>
+<p>Work experience of all my professional and personal projects</p>
+<hr />
+<h2 id="adcolony-acquired-by-digital-turbine">AdColony (acquired by
+Digital Turbine)</h2>
+<h3 id="senior-software-engineer-apr-2018---present">Senior Software
+Engineer (Apr 2018 - Present)</h3>
+<h4 id="bellevue-wa">Bellevue, WA</h4>
+<ul>
+<li>Migrated Databricks jobs to Spark over Kubernetes. The jobs
+aggregate data from S3/GCS using Spark and use Airflow to ingest into
+Druid.</li>
+<li>Architected and implemented AWS to GCP infrastructure business unit
+migration using Terraform</li>
+<li>Created generic AWS Data pipeline using AWS EMR to clean up non-TTL
+records from AWS DyanmoDB – leading to a
+<code>$1M annualized savings</code> in storage costs.</li>
+<li>Led personal information obfuscation project for entire business org
+to meet GDPR legal requirements.</li>
+<li>Built automation scripts to aggregate TBs event data and compact
+them on Redshift/Google BigQuery in hourly/daily/monthly time
+windows.</li>
+<li>Built monitoring &amp; alerting tools for all the Kafka based
+streaming applications using <a
+href="https://github.com/seglo/kafka-lag-exporter">Lag exporter</a>,
+Prometheus, Grafana hosted on Kubernetes cluster as Helm releases.</li>
+<li>Memory &amp; application instrumentation that led to 20%
+month-over-month cost savings for the BigData team.</li>
+<li>Designed &amp; implemented Monix task based HTTP service (with
+rate-limiting) to populate data onto GCS and GBQ.</li>
+<li>Built event triggers using Google cloud function to trigger app
+processing whenever a Google BigQuery job dumped data onto Google cloud
+storage. The trigger was an HTTP ping to an existing app to notify the
+data was ready for processing.</li>
+<li>Created scalable scripts to process tons of data (in TBs) from
+Google cloud and pump it the data processing pipeline for replaying HTTP
+requests.</li>
+<li>Architected designs for end-to-end request tracing in micro-services
+based big-data pipeline. This helped analyze each request that enters in
+the big-data system, through the various interactions/transformations it
+goes through, before ending up in the destination data sources.</li>
+<li>Created load-testing frameworks for HTTP services using Gatling that
+helped analyze and improve the performance by reducing the response time
+by 50%.</li>
+<li>Analyzed big-data components for cost-savings effort. Used
+Prometheus + Grafana and AWS’s internal tools like Cloudwatch, EC2 to
+monitor the current usage of services. Recommended &amp; implemented
+optimum resource usage (EC2 types and counts) that helped reduce the
+monthly cost by 20%.</li>
+</ul>
+<h3 id="software-engineer-mar-2017---mar-2018">Software Engineer (Mar
+2017 - Mar 2018)</h3>
+<h4 id="bellevue-wa-1">Bellevue, WA</h4>
+<ul>
+<li>Created a highly scalable RESTful web-service using Scala + Finch to
+support adding new categories of devices (segments) for AdColony’s web
+portal for ad-targeting.</li>
+<li>Created a real-time streaming application to consume events from AWS
+Kinesis streams triggered by Lambda to populate Google BigQuery for data
+analysis.</li>
+<li>Built a highly scalable &amp; highly available application that
+syncs events from AWS S3 to Google Cloud storage and loads them to
+BigQuery – with automatic retries, alerting (using Slack) and monitoring
+(Prometheus + Grafana).</li>
+<li>Built many customizable Bash scripts to help automate tasks for the
+team. For example:
+<ul>
+<li>Loading data from Google Cloud storage into BigQuery by the data’s
+correct partition date.</li>
+<li>Sanitizing really huge compressed data files (in GBs) for data
+processing.</li>
+</ul></li>
+<li>Designed a multi-threaded highly scalable application to read and
+process 15k+ requests per second from Google BigQuery and enrich the
+data on AWS DynamoDB.</li>
+<li>Instrumental in setting up a testing environment to address
+end-to-end request tracking and data availability.</li>
+</ul>
+<hr />
+<h2 id="bank-of-america">Bank of America</h2>
+<h3 id="software-engineer-vice-president-jan-2017---mar-2017">Software
+Engineer, Vice president (Jan 2017 - Mar 2017)</h3>
+<h4 id="seattle-wa">Seattle, WA</h4>
+<ul>
+<li>Built an ETL process using Cassandra, Spark for data pre-processing
+for machine learning models.</li>
+<li>Designed &amp; built a highly scalable multi-threaded
+cross-datacenter distributed system using Akka framework.
+<ul>
+<li>The cluster application did message transformation and replication
+from &amp; to Kafka.</li>
+<li>Also implemented the JMX-plugin of akka-cluster to monitor the
+application.</li>
+</ul></li>
+</ul>
+<h3
+id="software-engineer-asst.-vice-president-feb-2015---jan-2017">Software
+engineer, Asst. Vice-President (Feb 2015 - Jan 2017)</h3>
+<h4 id="seattle-wa-1">Seattle, WA</h4>
+<ul>
+<li>Data migration - Developed a multi-threaded, highly configurable
+J2EE application to migrate data from Mainframe to Oracle with the
+following features:
+<ul>
+<li>Check pointing - ability to start/stop/resume processing input file
+at any time.</li>
+<li>Locking mechanism - so that only 1 instance of the application runs
+at any time.</li>
+<li>Dynamic loading of properties - number of threads, timeouts, number
+of records to process etc.</li>
+<li>Shell script to trigger the conversion process.</li>
+</ul></li>
+<li>Big data analytics and pre-processing framework setup
+<ul>
+<li>Used Spark, Cassandra, SOLR and Kafka to create a big data analytics
+project. (Details below)</li>
+</ul></li>
+<li>Built many automation scripts using Bash and Expect:
+<ul>
+<li>Passwordless SSH into new VMs</li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="intuit">Intuit</h2>
+<h3 id="software-developer-co-op-jul-2014---dec-2014">Software developer
+co-op (Jul 2014 - Dec 2014)</h3>
+<h4 id="san-diego-ca">San Diego, CA</h4>
+<ul>
+<li>Enhanced the TurboTax Mac app:
+<ul>
+<li>Added new features for the TY14 tax season.</li>
+<li>Enabled PDF attachments for NY users - compliance feature.</li>
+<li>Added new XML screens for ACA (affordable care act) post filing
+experience.</li>
+</ul></li>
+<li>Replaced server based tax calculations, with embedded Javascript,
+for TaxCaster app on iOS (using Javascriptcore) and Android (using Rhino
+and Gson), resulting in increase in speed by 50%.
+<ul>
+<li>Improved the efficiency by totally eliminating the network
+latency</li>
+<li>Also allowed the app to be used in offline mode (as opposed to being
+network based).</li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="rochester-institute-of-technology">Rochester Institute of
+Technology</h2>
+<h3 id="graduate-research-assistant-aug-2013---may-2014">Graduate
+Research Assistant (Aug 2013 - May 2014)</h3>
+<h4 id="rochester-ny">Rochester, NY</h4>
+<ul>
+<li>Python based web-server developer and manager for co-robotics
+project.
+<ul>
+<li><p>Developed a web based application to communicate with all the
+corobots in the system.</p></li>
+<li><p>The PHP and JQuery based website, backed with a multi-threaded
+Python server process and MySQL database, was hosted on an Ubuntu VM,
+running an Apache 2 web server (LAMP stack).</p></li>
+<li><p>The web application has the following features:</p>
+<ul>
+<li>Remote monitoring of corobots (using AJAX and JSON). - Current X-Y
+co-ordinates, status, destination of the corobots.</li>
+</ul></li>
+<li><p>Remote deployment to corobots. - Upload code to be executed on
+corobots. - Choose a destination to navigate an IDLE corobot to. -
+Currently, we provide Python and Java API. Hence, the application
+supports, extension based remote deployment of code.</p></li>
+<li><p>Individual workspaces for students. - Upload files, view/deploy
+uploaded files, download user specific logs.</p></li>
+<li><p>Integrated with RIT password service over LDAPS and
+HTTPS.</p></li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="motorola-solutions">Motorola Solutions</h2>
+<h3 id="summer-intern-jun-2013---aug-2013">Summer Intern (Jun 2013 - Aug
+2013)</h3>
+<h4 id="holtsville-ny">Holtsville, NY</h4>
+<ul>
+<li>Developed a web application using Python, for automatic daily
+collection of data.
+<ul>
+<li>Support for MySQL and ORACLE databases with the web application, to
+generate user interested data.</li>
+<li>Output spreadsheet and graphs generated were used for tracking the
+progress and analysis of products.</li>
+<li>Basic configuration and initial setup of ISS web server for hosting
+the web application.</li>
+<li>Application enhanced the process of metric collection for the
+products under test cycle.</li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="infosys">Infosys</h2>
+<h3 id="systems-engineer-jul-2010---jun-2012">Systems Engineer (Jul 2010
+- Jun 2012)</h3>
+<h4 id="pune-india">Pune, India</h4>
+<ul>
+<li>Handled the Mainframe based applications, their routine scheduling
+and their feed to other applications in the pipeline.</li>
+<li>Responsible for analysis and quick resolution of incidents,
+pertaining to the application.</li>
+<li>Actively involved in bug fixing and addition of new features.</li>
+<li>Wrote unit and system test routines as part of the enhancement of
+the project.</li>
+</ul>
+<hr />
+<h2 id="polygon">Polygon</h2>
+<h3 id="engineering-intern-may-2009---may-2010">Engineering Intern (May
+2009 - May 2010)</h3>
+<h4 id="mumbai-india">Mumbai, India</h4>
+<ul>
+<li>Developed a prototype for an RF based remote control for HVAC
+systems.</li>
+<li>Added basic functionality of the HVAC remote system, along with an
+option, to allow control for multiple HVACs, by changing the program
+feature.</li>
+<li>Also added functionality for automatic scheduling and timing.</li>
+<li>The prototype was designed using Proteus 7.1. The coding was done in
+Keil-C.</li>
+</ul>
+<hr />
+<h1 id="education">Education</h1>
+<h2 id="rochester-institute-of-technology-1">Rochester institute of
+technology</h2>
+<h3 id="masters-of-science-m.s.-computer-science-2012-2014">Masters of
+Science (M.S.) Computer science (2012-2014)</h3>
+<h4 id="cgpa-3.51">CGPA = 3.51</h4>
+<h2
+id="svkms-narsee-monjee-institute-of-management-studies-nmims">SVKM’s
+Narsee Monjee Institute of Management Studies (NMIMS)</h2>
+<h3 id="b.tech-electronics-2006-2010">B.Tech (Electronics)
+(2006-2010)</h3>
+<h4 id="cgpa-3.43">CGPA = 3.43</h4>
+<h2 id="nath-valley-school">Nath valley school</h2>
+<h4 id="ssc-hsc-2000-2006">SSC &amp; HSC (2000-2006)</h4>
+<hr />
+<h1 id="licenses-certifications">Licenses &amp; certifications</h1>
+<h2 id="cka-certified-kubernetes-administrator">CKA: Certified
+Kubernetes Administrator</h2>
+<h3 id="the-linux-foundation-foundation">The Linux Foundation
+Foundation</h3>
+<h4 id="issued-jun-2022-expires-jun-2025">Issued Jun 2022 · Expires Jun
+2025</h4>
+<p><a
+href="https://www.credly.com/badges/a6210611-7402-44d3-b5c7-a38a7615ee3c">Credential
+ID LF-tcmewjc3tu</a></p>
+<h2 id="datastax-apache-cassandra-professional-certification">DataStax
+Apache Cassandra™ Professional Certification</h2>
+<h3 id="datastax">DataStax</h3>
+<h4 id="issued-sep-2016">Issued Sep 2016</h4>
+<hr />
+<h4
+id="technologies-skills-airflow-apache-druid-apache-spark-databricks-docker-google-bigquery-helm-kafka-terraform">Technologies
+&amp; skills:
+<code>Airflow • Apache Druid • Apache Spark • Databricks • Docker • Google BigQuery • Helm • Kafka • Terraform</code></h4>
+<h4 id="coding-languages-bash-java-python-scala">Coding languages:
+<code>Bash • Java • Python • Scala</code></h4>
+<h4 id="databases-mysql-postgres">Databases:
+<code>MySQL • Postgres</code></h4>
+<h4 id="platforms-aws-gcp-kubernetes">Platforms:
+<code>AWS • GCP • Kubernetes</code></h4>
+</body>
+</html>

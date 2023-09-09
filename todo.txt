@@ -1,0 +1,3 @@
+todo:
+- add collapsible class
+- add sections/index for quick access
