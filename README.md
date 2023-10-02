@@ -17,8 +17,11 @@ Work experience of all my professional and personal projects
 
 ## AdColony (acquired by Digital Turbine)
 ### Senior Software Engineer (Apr 2018 - Present)
-#### Bellevue, WA
+#### Bothell, WA
 
+- Tech lead and mentor for the Bigdata team
+- Migrated Databricks jobs to Spark over Kubernetes. The jobs aggregate data from S3/GCS using Spark and use Airflow to ingest into Druid.
+- Built a generic data pipeline using Apache Beam, GCP Cloud Dataflow for migrating AWS DynamoDB data into GCP BigTable.
 - Migrated Databricks jobs to Spark over Kubernetes. The jobs aggregate data from S3/GCS using Spark and use Airflow to ingest into Druid.
 - Architected and implemented AWS to GCP infrastructure business unit migration using Terraform
 - Created generic AWS Data pipeline using AWS EMR to clean up non-TTL records from AWS DyanmoDB – leading to a `$1M annualized savings` in storage costs.
